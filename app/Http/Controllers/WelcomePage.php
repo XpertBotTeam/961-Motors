@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class WelcomePage extends Controller
 {
-    public function index()
+    public function index($user)
     {
-        return view('home');
+        $user = User::findorfail($user);
+        return view('profiles.index',[
+            'user' => $user
+        ]);
     }
 }
