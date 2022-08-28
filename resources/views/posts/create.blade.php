@@ -41,6 +41,12 @@
             <div class="row pt-4">
                 <button class="btn btn-primary">Add New Post</button>
             </div>
+
+            <div class="row pt-5">
+                <div class="col-md-4 col-form-label"></div>
+                <div class="ccol-md-4 col-form-label"><a  href="http://api.whatsapp.com/send/?phone=96176960954">Contact Us  <img src="https://tse3.mm.bing.net/th?id=OIP.-COVg3ED3fKTdsRSQDJe_QHaHa&pid=Api&P=0" style="height: 50px;"></a></div>
+            </div>
+        
         </div>
     </div>
    </form>

@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +24,6 @@ Auth::routes();
 
 Route::get('/p/create', [App\Http\Controllers\PostsController::class, 'create']);
 
-Route::post('/p', [App\Http\Controllers\PostsController::class, 'post']);
+Route::post('/p', [App\Http\Controllers\PostsController::class, 'store']);
 
 Route::get('/Profile/{user}', [App\Http\Controllers\WelcomePage::class, 'index'])->name('Profile.show');
